@@ -1,17 +1,5 @@
 # TP 16 - Projet React avec GraphQL et Apollo Client
 
-Console bancaire nommee Console Bancaire Rif, developpee en React avec Vite,
-Apollo Client et Tailwind. L interface consomme le service GraphQL bancaire du
-TP 15, lance ici sur le port 8090, et couvre la lecture des comptes, la
-recherche par titulaire, le filtrage par type, la creation de compte,
-l enregistrement des depots et des retraits, la consultation d un compte avec
-son historique et la suppression.
-
-Realise par Ahmed Benidar - application banque-rif-console - service sur le port
-8090 et interface sur le port 5173.
-
----
-
 ## 1. Outils utilises
 
 Node 22 et npm 10 ont servi au front, Java 21 et Maven 3.9.9 au service. Les
@@ -200,33 +188,3 @@ service.
 
 ---
 
-## 15. Personnalisation du travail
-
-Le sujet a ete suivi dans son ensemble, avec plusieurs choix propres pour eviter
-un rendu identique a celui des autres etudiants :
-
-- nom d application propre au projet, banque-rif-console, version 1.0.0 ;
-- service GraphQL lance sur le port 8090 au lieu du port habituel des corriges ;
-- interface developpee avec Vite et Tailwind plutot qu un gabarit de creation ;
-- trois types de comptes, dont un type professionnel absent du sujet de base ;
-- titulaire et date de creation affiches sur chaque compte ;
-- tableau de bord avec repartition des soldes par type, non demande par le sujet ;
-- recherche par titulaire declenchee des la deuxieme lettre, avec requete dediee ;
-- filtre par type applique en plus de la recherche ;
-- fiche de compte laterale avec possibilite de fermer la selection ;
-- historique par compte ou vue globale selon la selection ;
-- refus du decouvert avec message d erreur metier remonte dans l interface ;
-- garde ajoutee dans les formulaires pour ne jamais afficher un succes quand le
-  service renvoie une erreur GraphQL ;
-- libelles, messages et noms de composants en francais ;
-- montants formates en dirhams et dates au format jour mois annee ;
-- jeu de donnees marocain avec cinq titulaires et des montants varies.
-
----
-
-## 16. Remarque sur la verification
-
-Aucune campagne de tests automatises n a ete ajoutee au projet. La validation a
-ete faite manuellement, en utilisant l interface reelle dans le navigateur, en
-rejouant les operations dans GraphiQL et en controlant les reponses du service
-avec des appels directs.
